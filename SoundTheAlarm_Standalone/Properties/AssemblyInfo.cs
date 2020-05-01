@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SettlementAttackAlert")]
+[assembly: AssemblyTitle("SoundTheAlarm_Standalone")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SettlementAttackAlert")]
+[assembly: AssemblyProduct("SoundTheAlarm_Standalone")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("750147de-9af2-47b2-9247-155fd4fcb958")]
+[assembly: Guid("4ac1f932-12c5-444b-afcb-b09e5541c13e")]
 
 // Version information for an assembly consists of the following four values:
 //

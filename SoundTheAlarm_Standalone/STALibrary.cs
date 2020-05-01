@@ -40,6 +40,9 @@ namespace SoundTheAlarm {
                         case "enablepeacepopup":
                             STAConfiguration.EnablePeacePopup = node.InnerText.ToBool();
                             break;
+                        case "enableminorfactionpopup":
+                            STAConfiguration.EnableMinorFactionPopup = node.InnerText.ToBool();
+                            break;
                         case "pausegameonpopup":
                             STAConfiguration.PauseGameOnPopup = node.InnerText.ToBool();
                             break;

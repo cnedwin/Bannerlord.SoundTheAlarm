@@ -35,6 +35,7 @@ namespace SoundTheAlarm {
         public override void OnGameLoaded(Game game, object initializerObject) {
             base.OnGameLoaded(game, initializerObject);
             try {
+                game.GameTextManager.LoadGameTexts(BasePath.Name + $"Modules/SoundTheAlarm/ModuleData/module_strings.xml");
                 STALibrary.Instance.STAAction.Initialize();
                 if(STALibrary.Instance.STAConfiguration.EnableVillagePopup) {
                     CampaignEvents.VillageBeingRaided.AddNonSerializedListener(this, new Action<Village>(STALibrary.Instance.STAAction.DisplayVillageRaid));
