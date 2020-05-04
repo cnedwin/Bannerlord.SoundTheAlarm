@@ -24,6 +24,7 @@ namespace SoundTheAlarm {
                     "Villages(" + STALibrary.Instance.STAConfiguration.EnableVillagePopup + ")\n" +
                     "Castles(" + STALibrary.Instance.STAConfiguration.EnableCastlePopup + ")\n" +
                     "Towns(" + STALibrary.Instance.STAConfiguration.EnableTownPopup + ")\n" +
+                    "MinorFaction(" + STALibrary.Instance.STAConfiguration.EnableMinorFactionPopup + ")\n" +
                     "Wars(" + STALibrary.Instance.STAConfiguration.EnableWarPopup + ")\n" +
                     "Peace(" + STALibrary.Instance.STAConfiguration.EnablePeacePopup + ")\n" +
                     "PauseOnPopup(" + STALibrary.Instance.STAConfiguration.PauseGameOnPopup + ")\n" +

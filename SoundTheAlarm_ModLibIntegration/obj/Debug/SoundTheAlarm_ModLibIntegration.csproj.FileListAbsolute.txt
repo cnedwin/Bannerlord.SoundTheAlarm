@@ -4,3 +4,4 @@ D:\Desktop\Games\Mount&Blade II Bannerlord\bannerlord-mods-local\SoundTheAlarm_M
 D:\Desktop\Games\Mount&Blade II Bannerlord\bannerlord-mods-local\SoundTheAlarm_ModLibIntegration\SoundTheAlarm\bin\Win64_Shipping_Client\SoundTheAlarm.pdb
 C:\Users\Jourdan Haines\documents\visual studio 2015\Projects\SoundTheAlarm_ModLibIntegration\SoundTheAlarm_ModLibIntegration\obj\Debug\SoundTheAlarm.dll
 C:\Users\Jourdan Haines\documents\visual studio 2015\Projects\SoundTheAlarm_ModLibIntegration\SoundTheAlarm_ModLibIntegration\obj\Debug\SoundTheAlarm.pdb
+C:\Users\Jourdan Haines\documents\visual studio 2015\Projects\SoundTheAlarm_ModLibIntegration\SoundTheAlarm_ModLibIntegration\obj\Debug\SoundTheAlarm_ModLibIntegration.csprojResolveAssemblyReference.cache

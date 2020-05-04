@@ -93,7 +93,12 @@ namespace SoundTheAlarm {
 
         // Action method fired once two empires declare war
         public void OnDeclareWar(IFaction faction1, IFaction faction2) {
-            
+            if (faction1.IsMinorFaction || faction2.IsMinorFaction || faction1.IsBanditFaction || faction2.IsBanditFaction) {
+                if (!STASettings.Instance.EnableMinorFactionPopup) {
+                    return;
+                }
+            }
+
             string title = GetDeclarationTitle(true);
             string display = GetDeclarationDisplay(faction1, faction2, true);
 
@@ -104,6 +109,12 @@ namespace SoundTheAlarm {
 
         // Action method fired once two empires declare peace
         public void OnDeclarePeace(IFaction faction1, IFaction faction2) {
+            if (faction1.IsMinorFaction || faction2.IsMinorFaction || faction1.IsBanditFaction || faction2.IsBanditFaction) {
+                if (!STASettings.Instance.EnableMinorFactionPopup) {
+                    return;
+                }
+            }
+
             string title = GetDeclarationTitle(false);
             string display = GetDeclarationDisplay(faction1, faction2, false);
 
@@ -183,7 +194,7 @@ namespace SoundTheAlarm {
         private string GetDisplayFromSiege(SiegeEvent e, bool isCastle) {
             if(isCastle) {
                 TextObject text = GameTexts.FindText("str_sta_alarm_castle_attack_message", null);
-                text.SetTextVariable("CASTLE", e.BesiegedSettlement.LastAttackerParty.Name);
+                text.SetTextVariable("CASTLE", e.BesiegedSettlement.Name.ToString());
                 TextObject attacker = new TextObject("", null);
                 attacker.SetTextVariable("PARTY", e.BesiegedSettlement.LastAttackerParty.Name);
                 attacker.SetTextVariable("NAME", e.BesiegedSettlement.LastAttackerParty.LeaderHero.Name);
@@ -194,7 +205,7 @@ namespace SoundTheAlarm {
                 return text.ToString();
             } else {
                 TextObject text = GameTexts.FindText("str_sta_alarm_town_attack_message", null);
-                text.SetTextVariable("TOWN", e.BesiegedSettlement.LastAttackerParty.Name);
+                text.SetTextVariable("TOWN", e.BesiegedSettlement.Name.ToString());
                 TextObject attacker = new TextObject("", null);
                 attacker.SetTextVariable("PARTY", e.BesiegedSettlement.LastAttackerParty.Name);
                 attacker.SetTextVariable("NAME", e.BesiegedSettlement.LastAttackerParty.LeaderHero.Name);
