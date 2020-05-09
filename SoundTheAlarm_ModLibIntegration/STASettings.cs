@@ -1,5 +1,5 @@
-﻿using ModLib;
-using ModLib.Attributes;
+﻿using ModLib.Definitions;
+using ModLib.Definitions.Attributes;
 using System.Xml.Serialization;
 
 namespace SoundTheAlarm {
@@ -12,7 +12,7 @@ namespace SoundTheAlarm {
 
         public static STASettings Instance {
             get {
-                return (STASettings)SettingsDatabase.GetSettings(InstanceID);
+                return (STASettings)SettingsDatabase.GetSettings<STASettings>();
             }
         }
 

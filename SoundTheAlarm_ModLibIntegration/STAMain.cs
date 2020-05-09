@@ -4,24 +4,11 @@ using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Library;
-using ModLib;
 
 namespace SoundTheAlarm {
     public class STAMain : MBSubModuleBase {
 
         public static readonly string ModuleFolderName = "SoundTheAlarm";
-
-        // Read XML data once the SubModule has been loaded
-        protected override void OnSubModuleLoad() {
-            try {
-                FileDatabase.Initialise(ModuleFolderName);
-                STASettings settings = FileDatabase.Get<STASettings>(STASettings.InstanceID);
-                if (settings == null) settings = new STASettings();
-                SettingsDatabase.RegisterSettings(settings);
-            } catch(Exception ex) {
-                MessageBox.Show("An error occurred whilst initializing Sound The Alarm via ModLib:\n\n" + ex.Message);
-            }
-        }
 
         // Method run during the initial movie on game startup
         protected override void OnBeforeInitialModuleScreenSetAsRoot() {
