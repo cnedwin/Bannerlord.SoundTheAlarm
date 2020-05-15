@@ -93,11 +93,10 @@ namespace SoundTheAlarm {
 
         // Action method fired once two empires declare war
         public void OnDeclareWar(IFaction faction1, IFaction faction2) {
-            if(faction1.IsMinorFaction || faction2.IsMinorFaction || faction1.IsBanditFaction || faction2.IsBanditFaction) {
-                if (!STALibrary.Instance.STAConfiguration.EnableMinorFactionPopup) {
+            if(!faction1.IsKingdomFaction || !faction2.IsKingdomFaction)
+                if (!STALibrary.Instance.STAConfiguration.EnableMinorFactionPopup)
                     return;
-                }
-            }
+
             string title = GetDeclarationTitle(true);
             string display = GetDeclarationDisplay(faction1, faction2, true);
 
@@ -108,11 +107,9 @@ namespace SoundTheAlarm {
 
         // Action method fired once two empires declare peace
         public void OnDeclarePeace(IFaction faction1, IFaction faction2) {
-            if (faction1.IsMinorFaction || faction2.IsMinorFaction || faction1.IsBanditFaction || faction2.IsBanditFaction) {
-                if (!STALibrary.Instance.STAConfiguration.EnableMinorFactionPopup) {
+            if (!faction1.IsKingdomFaction || !faction2.IsKingdomFaction)
+                if (!STALibrary.Instance.STAConfiguration.EnableMinorFactionPopup)
                     return;
-                }
-            }
 
             string title = GetDeclarationTitle(false);
             string display = GetDeclarationDisplay(faction1, faction2, false);
