@@ -1,5 +1,0 @@
-c:\users\jourdan haines\documents\visual studio 2015\Projects\SoundTheAlarm_Standalone\SoundTheAlarm_Standalone\obj\Debug\SoundTheAlarm_Standalone.csprojResolveAssemblyReference.cache
-D:\Desktop\Games\Mount&Blade II Bannerlord\bannerlord-mods-local\SoundTheAlarm_Standalone\SoundTheAlarm\bin\Win64_Shipping_Client\SoundTheAlarm.dll
-D:\Desktop\Games\Mount&Blade II Bannerlord\bannerlord-mods-local\SoundTheAlarm_Standalone\SoundTheAlarm\bin\Win64_Shipping_Client\SoundTheAlarm.pdb
-c:\users\jourdan haines\documents\visual studio 2015\Projects\SoundTheAlarm_Standalone\SoundTheAlarm_Standalone\obj\Debug\SoundTheAlarm.dll
-c:\users\jourdan haines\documents\visual studio 2015\Projects\SoundTheAlarm_Standalone\SoundTheAlarm_Standalone\obj\Debug\SoundTheAlarm.pdb
