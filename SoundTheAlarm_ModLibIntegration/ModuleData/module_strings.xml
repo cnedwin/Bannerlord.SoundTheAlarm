@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <strings>
+    <string id="str_sta_ui_track" text="{=sta_ui_track}Track" />
+    <string id="str_sta_ui_ok" text="{=sta_ui_ok}Ok" />
+    <string id="str_sta_ui_close" text="{=sta_ui_close}Close" />
+    <string id="str_sta_alarm_village_attack_title" text="{=sta_vil_at}Village Being Raided" />
+    <string id="str_sta_alarm_village_attack_message" text="{=sta_vil_am}The village of {VILLAGE} is under attack by {ATTACKER.PARTY} of the {ATTACKER.FACTION}!" />
+    <string id="str_sta_alarm_castle_attack_title" text="{=sta_cas_at}Castle Under Siege" />
+    <string id="str_sta_alarm_castle_attack_message" text="{=sta_cas_am}The castle of {CASTLE} is under attack by {ATTACKER.PARTY} of the {ATTACKER.FACTION}!" />
+    <string id="str_sta_alarm_town_attack_title" text="{=sta_tow_at}Town Under Siege" />
+    <string id="str_sta_alarm_town_attack_message" text="{=sta_tow_am}The town of {TOWN} is under attack by {ATTACKER.PARTY} of the {ATTACKER.FACTION}!" />
+    <string id="str_sta_alarm_war_title" text="{=sta_war_t}Declaration of War" />
+    <string id="str_sta_alarm_war_message" text="{=sta_war_m}{LEADER} of the {FACTION1} has signed a declaration of war against the {FACTION2}." />
+    <string id="str_sta_alarm_peace_title" text="{=sta_pea_t}Declaration of Peace" />
+    <string id="str_sta_alarm_peace_message" text="{=sta_pea_m}{LEADER} of the {FACTION1} has signed a declaration of peace with the {FACTION2}." />
+  </strings>
+</base>

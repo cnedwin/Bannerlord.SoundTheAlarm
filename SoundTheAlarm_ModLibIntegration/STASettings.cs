@@ -2,16 +2,20 @@
 using ModLib.Definitions.Attributes;
 using System.Xml.Serialization;
 
-namespace SoundTheAlarm {
-    public class STASettings : SettingsBase {
+namespace SoundTheAlarm
+{
+    public class STASettings : SettingsBase
+    {
         public const string InstanceID = "SoundTheAlarmSettings";
         public override string ModName => "Sound The Alarm";
         public override string ModuleFolderName => STAMain.ModuleFolderName;
         [XmlElement]
         public override string ID { get; set; } = InstanceID;
 
-        public static STASettings Instance {
-            get {
+        public static STASettings Instance
+        {
+            get
+            {
                 return (STASettings)SettingsDatabase.GetSettings<STASettings>();
             }
         }
@@ -40,7 +44,7 @@ namespace SoundTheAlarm {
         [SettingProperty("Enable Declaration of Peace Popup", "Enables popups when factions declare peace with one another.")]
         [SettingPropertyGroup("2. Declarations")]
         public bool EnablePeacePopup { get; set; } = true;
-        
+
         [XmlElement]
         [SettingProperty("Enable Minor Faction Popups", "Enables popups for declarations of war/peace for minor factions.")]
         [SettingPropertyGroup("2. Declarations")]

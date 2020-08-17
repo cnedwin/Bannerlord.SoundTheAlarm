@@ -1,9 +1,14 @@
-﻿namespace SoundTheAlarm {
-    public static class StringExtensions {
-        public static bool ToBool(this string s) {
-            if (!string.IsNullOrWhiteSpace(s)) {
+﻿namespace SoundTheAlarm
+{
+    public static class StringExtensions
+    {
+        public static bool ToBool(this string s)
+        {
+            if (!string.IsNullOrWhiteSpace(s))
+            {
                 s = s.Trim().ToLower();
-                if (s == "true") {
+                if (s == "true")
+                {
                     return true;
                 }
             }

@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-SoundTheAlarm_ModLibIntegration",
+      "appliesTo": "SoundTheAlarm_ModLibIntegration/SoundTheAlarm_ModLibIntegration.csproj",
+      "type": "msbuild"
+    }
+  ]
+}

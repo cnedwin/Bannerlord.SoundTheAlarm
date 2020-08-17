@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Windows.Forms;
-using TaleWorlds.Core;
-using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.Core;
 using TaleWorlds.Library;
+using TaleWorlds.MountAndBlade;
 
-namespace SoundTheAlarm {
-    public class STAMain : MBSubModuleBase {
+namespace SoundTheAlarm
+{
+    public class STAMain : MBSubModuleBase
+    {
 
         public static readonly string ModuleFolderName = "SoundTheAlarm";
 
         // Method run during the initial movie on game startup
-        protected override void OnBeforeInitialModuleScreenSetAsRoot() {
+        protected override void OnBeforeInitialModuleScreenSetAsRoot()
+        {
             base.OnBeforeInitialModuleScreenSetAsRoot();
             if (STASettings.Instance.EnableDebugMessages)
                 InformationManager.DisplayMessage(new InformationMessage(
@@ -28,26 +31,34 @@ namespace SoundTheAlarm {
         }
 
         // Initialize Sound The Alarm once the save has been loaded
-        public override void OnGameLoaded(Game game, object initializerObject) {
+        public override void OnGameLoaded(Game game, object initializerObject)
+        {
             base.OnGameLoaded(game, initializerObject);
-            try {
+            try
+            {
                 game.GameTextManager.LoadGameTexts(BasePath.Name + $"Modules/SoundTheAlarm/ModuleData/module_strings.xml");
                 STAAction.Instance.Initialize();
-                if(STASettings.Instance.EnableVillagePopup) {
+                if (STASettings.Instance.EnableVillagePopup)
+                {
                     CampaignEvents.VillageBeingRaided.AddNonSerializedListener(this, new Action<Village>(STAAction.Instance.DisplayVillageRaid));
                     CampaignEvents.VillageBecomeNormal.AddNonSerializedListener(this, new Action<Village>(STAAction.Instance.FinalizeVillageRaid));
                 }
-                if (STASettings.Instance.EnableCastlePopup || STASettings.Instance.EnableTownPopup) {
+                if (STASettings.Instance.EnableCastlePopup || STASettings.Instance.EnableTownPopup)
+                {
                     CampaignEvents.OnSiegeEventStartedEvent.AddNonSerializedListener(this, new Action<SiegeEvent>(STAAction.Instance.DisplaySiege));
                     CampaignEvents.OnSiegeEventEndedEvent.AddNonSerializedListener(this, new Action<SiegeEvent>(STAAction.Instance.FinalizeSiege));
                 }
-                if (STASettings.Instance.EnableWarPopup) {
+                if (STASettings.Instance.EnableWarPopup)
+                {
                     CampaignEvents.WarDeclared.AddNonSerializedListener(this, new Action<IFaction, IFaction>(STAAction.Instance.OnDeclareWar));
                 }
-                if (STASettings.Instance.EnablePeacePopup) {
+                if (STASettings.Instance.EnablePeacePopup)
+                {
                     CampaignEvents.MakePeace.AddNonSerializedListener(this, new Action<IFaction, IFaction>(STAAction.Instance.OnDeclarePeace));
                 }
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show("An error has occurred whilst initialising Sound The Alarm:\n\n" + ex.Message + "\n\n" + ex.StackTrace);
             }
         }

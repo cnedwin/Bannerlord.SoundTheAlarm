@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="English" />
+  </tags>
+  <strings>
+    <string id="sta_ui_track" text="Track" />
+    <string id="sta_ui_ok" text="Ok" />
+    <string id="sta_ui_close" text="Close" />
+	<!-- you can use either {ATTACKER.PARTY} for party name or {ATTACKER.NAME} for party leader name" -->
+	<!-- you can also use {?ATTACKER.GENDER} flag for leader gender check below. For example "{?ATTACKER.GENDER}She{?}He{/?} signed..." -->
+    <string id="sta_vil_at" text="Village Being Raided" />
+    <string id="sta_vil_am" text="The village of {VILLAGE} is under attack by {ATTACKER.PARTY} of the {ATTACKER.FACTION}!" />
+    <string id="sta_cas_at" text="Castle Under Siege" />
+    <string id="sta_cas_am" text="The castle of {CASTLE} is under attack by {ATTACKER.PARTY} of the {ATTACKER.FACTION}!" />
+    <string id="sta_tow_at" text="Town Under Siege" />
+    <string id="sta_tow_am" text="The town of {TOWN} is under attack by {ATTACKER.PARTY} of the {ATTACKER.FACTION}!" />
+    <string id="sta_war_t" text="Declaration of War" />
+	<!-- you can use {?IS_FEMALE} flag for leader gender check below. For example "{?IS_FEMALE}She{?}He{/?} signed..." -->
+    <string id="sta_war_m" text="{LEADER} of the {FACTION1} has signed a declaration of war against the {FACTION2}" />
+    <string id="sta_pea_t" text="Declaration of Peace" />
+    <string id="sta_pea_m" text="{LEADER} of the {FACTION1} has signed a declaration of peace with the {FACTION2}" />
+  </strings>
+</base>
