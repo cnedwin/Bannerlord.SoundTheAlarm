@@ -1,16 +1,10 @@
-﻿using HarmonyLib;
-using Bannerlord.ButterLib;
-using MCM.Abstractions.Attributes.v1;
-using MCM.Abstractions.Attributes.v2;
+﻿using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Attributes;
 using MCM.Abstractions.Settings.Base.Global;
-using MCM.Utils;
 using System.Xml.Serialization;
-using System.Runtime.CompilerServices;
 
 namespace SoundTheAlarm
 {
-    //public class STASettings : BaseSettings
     public class STASettings : AttributeGlobalSettings<STASettings>
     {
         public const string InstanceID = "SoundTheAlarmSettings";
@@ -18,19 +12,6 @@ namespace SoundTheAlarm
         public override string FolderName => STAMain.ModuleFolderName;
         [XmlElement]
         public override string Id { get; } = InstanceID;
-
-
-        //public static STASettings Instance = new STASettings();
-        /*
-        public static STASettings Instance
-        {
-            get
-            {
-                return (STASettings)SettingsDatabase.GetSettings<STASettings>();
-            }
-        }
-       */
-
 
         [XmlElement]
         [SettingPropertyBool("Enable Village Popup", Order = 1, RequireRestart = false, HintText = "Enables popups when your villages are attacked.")]
