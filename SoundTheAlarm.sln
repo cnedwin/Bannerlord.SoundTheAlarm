@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundTheAlarm_ModLibIntegration", "SoundTheAlarm_ModLibIntegration\SoundTheAlarm_ModLibIntegration.csproj", "{DC59A55E-ED89-49DB-AEF8-36D0BEED07AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundTheAlarm", "SoundTheAlarm_ModLibIntegration\SoundTheAlarm.csproj", "{DC59A55E-ED89-49DB-AEF8-36D0BEED07AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

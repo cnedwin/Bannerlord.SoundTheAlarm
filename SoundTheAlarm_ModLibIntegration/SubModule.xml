@@ -2,7 +2,7 @@
 <Module>
 	<Name value="Sound The Alarm"/>
 	<Id value="SoundTheAlarm"/>
-	<Version value="v1.4.1"/>
+	<Version value="v1.5.5"/>
 	<DefaultModule value="false"/>
 	<SingleplayerModule value="true"/>
 	<MultiplayerModule value="false"/>
